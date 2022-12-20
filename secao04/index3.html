@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Seção 04 - Aula 03</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Seção 04 - Aula 03</h1>
+
+        <script>
+            var idade = 17;
+
+            // Estrutura if
+            if(idade >= 18){
+                console.log("Maior de idade");
+            }else{
+                console.log("Menor de idade");
+            }
+
+            // Concatenando estruturas if
+            if(idade <= 14){
+                console.log("Criança");
+            }else if(idade > 14 && idade < 18){
+                console.log("Adolescente");
+            }else{
+                console.log("Adulto");
+            }
+
+            // Dica Geek:
+            // == compara o conteúdo
+            if(1 == "1"){
+                console.log('Sim, 1 == "1"');  // Retorna este
+            }else{
+                console.log("Não");
+            }
+
+            // === compara conteúdo e tipo de variável
+            if(1 === "1"){
+                console.log('Sim, 1 === "1"');
+            }else{
+                console.log("Não");  // Retorna este
+            }
+
+            // Estrutura switch
+            var sexo = 'm';
+
+            switch(sexo){
+                case 'm':
+                    console.log("Masculino");
+                    break;
+                case 'f':
+                    console.log("Feminino");
+                    break;
+                default:
+                    console.log('Desconhecido');
+                    break;
+            }
+
+            // Estrutura if com booleans
+            var s = 'm';
+            var masculino;
+            
+            if(s === 'm'){
+                masculino = true;
+            }else{
+                masculino = false;
+            }
+            console.log(masculino)
+
+            // Simplificando Geek:
+            var masc = (s === 'm');  // Os parenteses nem são necessários.
+            console.log(masc);
+
+        </script>
+    </body>
+</html>
